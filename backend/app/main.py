@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from .database import engine, Base
 from . import models
 
+from .routers import tasks
+
 # Create all tables
 Base.metadata.create_all(bind=engine)
 
@@ -12,6 +14,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
+app.include_router(tasks.router)
 
 @app.get("/")
 def home():
