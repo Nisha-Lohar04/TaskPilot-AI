@@ -1,23 +1,26 @@
 from fastapi import FastAPI
 
-from .database import engine, Base
-from . import models
+from app.database.session import Base, engine
+from app.models import User, Task
+from app.routers import auth, tasks
 
-from .routers import tasks
 
-# Create all tables
 Base.metadata.create_all(bind=engine)
+
 
 app = FastAPI(
     title="AI Task Manager API",
-    description="Backend API for AI Task Manager",
-    version="1.0.0"
+    version="1.0.0",
+    description="Backend API for the AI Task Manager platform",
 )
 
+
+app.include_router(auth.router)
 app.include_router(tasks.router)
 
-@app.get("/")
-def home():
+
+@app.get("/", tags=["Health"])
+def health_check():
     return {
-        "message": "Welcome to AI Task Manager API 🚀"
+        "status": "healthy"
     }

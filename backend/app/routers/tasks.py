@@ -1,17 +1,23 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from .. import crud, schemas
-from ..database import get_db
-
-router = APIRouter()
-
-
-@router.post("/tasks", response_model=schemas.TaskResponse)
-def create_task(task: schemas.TaskCreate, db: Session = Depends(get_db)):
-    return crud.create_task(db, task)
+from app.core.security import get_current_user
+from app.database.session import get_db
+from app.models.user import User
 
 
-@router.get("/tasks", response_model=list[schemas.TaskResponse])
-def read_tasks(db: Session = Depends(get_db)):
-    return crud.get_tasks(db)
+router = APIRouter(
+    prefix="/tasks",
+    tags=["Tasks"],
+)
+
+
+@router.get("/")
+def get_tasks(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    return {
+        "message": "Authenticated successfully",
+        "user": current_user.username,
+    }
