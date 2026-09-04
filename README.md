@@ -475,52 +475,51 @@ Health endpoints can be used to verify that the backend API is running successfu
 
 # 📸 Screenshots
 
+## 🔐 Account Creation
+
+![Account Creation](screenshots/01-Account_creation.png)
+
+---
+
+## 🔑 Login
+
+![Login](screenshots/02-Login.png)
+
+---
+
 ## 🏠 Dashboard
 
-> Add your Dashboard screenshot here.
+![Dashboard](screenshots/03-DashboardTab.png)
 
-```text
-screenshots/dashboard.png
-```
+---
+
+## ➕ Create Task
+
+![Create Task](screenshots/04-CreateTask.png)
 
 ---
 
 ## 📋 My Tasks
 
-> Add your task management screenshot here.
-
-```text
-screenshots/my-tasks.png
-```
+![My Tasks](screenshots/05-MyTasksTab.png)
 
 ---
 
 ## 🤖 AI Assistant
 
-> Add your AI Assistant screenshot here.
-
-```text
-screenshots/ai-assistant.png
-```
+![AI Assistant](screenshots/06-AiAssistantTab.png)
 
 ---
 
 ## 📊 Analytics
 
-> Add your Analytics screenshot here.
-
-```text
-screenshots/analytics.png
-```
+![Analytics](screenshots/07-AnalyticsTab.png)
 
 ---
 
 ## ⚙️ Settings
 
-> Add your Settings screenshot here.
-
-```text
-screenshots/settings.png
+![Settings](screenshots/08-SettingsTab.png)
 ```
 
 ---
