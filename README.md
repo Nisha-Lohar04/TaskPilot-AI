@@ -1,4 +1,4 @@
-# 🚀 TaskPilot AI
+# TaskPilot AI
 
 ### AI-Powered Task Management & Productivity Platform
 
@@ -10,22 +10,22 @@ Rather than being just a simple to-do application, TaskPilot AI demonstrates how
 
 ---
 
-## ✨ Key Highlights
+## Key Highlights
 
-- ⚛️ Modern React + Vite frontend
-- 🚀 High-performance FastAPI backend
-- 🔐 JWT-based authentication and protected routes
-- 📋 Complete task management functionality
-- 🗄️ SQLAlchemy ORM with SQLite database
-- 📊 Dashboard and task analytics
-- 🤖 AI assistant integration architecture
-- 🔄 RESTful frontend-backend communication
-- 🎨 Responsive and customizable user interface
-- 🏗️ Modular full-stack application architecture
+- Modern React + Vite frontend
+- High-performance FastAPI backend
+- JWT-based authentication and protected routes
+- Complete task management functionality
+- SQLAlchemy ORM with SQLite database
+- Dashboard and task analytics
+- AI assistant integration architecture
+- RESTful frontend-backend communication
+- Responsive and customizable user interface
+- Modular full-stack application architecture
 
 ---
 
-# 🎯 Project Overview
+# Project Overview
 
 Managing tasks effectively requires more than simply creating a list of items. A productivity application should provide users with a structured way to organize tasks, track priorities, monitor progress, and interact with their workspace efficiently.
 
@@ -46,9 +46,9 @@ The project focuses on demonstrating practical full-stack development concepts, 
 
 ---
 
-# ✨ Features
+# Features
 
-## 📋 Task Management
+## Task Management
 
 TaskPilot AI provides a centralized workspace for managing tasks throughout their lifecycle.
 
@@ -66,7 +66,7 @@ Users can:
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
 The dashboard provides users with an overview of their task activity and productivity.
 
@@ -82,7 +82,7 @@ The dashboard is designed to give users a quick understanding of their current w
 
 ---
 
-## 📈 Analytics
+## Analytics
 
 The analytics section helps users understand their task data through structured productivity insights.
 
@@ -98,7 +98,7 @@ This layer demonstrates how application data can be transformed into meaningful 
 
 ---
 
-## 🤖 AI Assistant
+## AI Assistant
 
 TaskPilot AI includes an AI integration layer designed to support intelligent task-related interactions.
 
@@ -113,7 +113,7 @@ The AI layer is structured separately from the core task management system, allo
 
 ---
 
-## 🔐 Authentication & Security
+## Authentication & Security
 
 The backend includes authentication mechanisms designed to protect user data and application routes.
 
@@ -130,7 +130,7 @@ This ensures that task-related operations can be associated with authenticated u
 
 ---
 
-## ⚙️ Settings & Personalization
+## Settings & Personalization
 
 Users can customize aspects of their workspace experience.
 
@@ -145,7 +145,7 @@ Supported preferences include:
 
 ---
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 ## Frontend
 
@@ -194,7 +194,7 @@ The project includes an architecture designed for AI-powered functionality and e
 
 ---
 
-# 🏗️ System Architecture
+# System Architecture
 
 TaskPilot AI follows a layered full-stack architecture.
 
@@ -231,7 +231,7 @@ The React frontend communicates with the FastAPI backend through REST APIs. The 
 
 ---
 
-# 🔄 Application Flow
+# Application Flow
 
 The general application workflow follows this structure:
 
@@ -262,7 +262,7 @@ This separation allows the frontend and backend to evolve independently while ma
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 TaskPilot-AI
@@ -311,7 +311,7 @@ TaskPilot-AI
 
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
 Follow the steps below to run TaskPilot AI locally.
 
@@ -325,7 +325,7 @@ Make sure you have the following installed:
 
 ---
 
-# 🔧 Backend Setup
+# Backend Setup
 
 Navigate to the backend directory:
 
@@ -373,7 +373,7 @@ http://localhost:8000
 
 ---
 
-# 📚 API Documentation
+# API Documentation
 
 FastAPI automatically generates interactive API documentation.
 
@@ -387,7 +387,7 @@ This provides an interactive interface for exploring and testing the available A
 
 ---
 
-# 💻 Frontend Setup
+# Frontend Setup
 
 Open another terminal and navigate to the frontend directory:
 
@@ -413,32 +413,11 @@ The frontend will be available at:
 http://localhost:5173
 ```
 
----
-
-# 🔐 Environment Configuration
-
-Create a `.env` file inside the backend directory.
-
-Example configuration:
-
-```env
-SECRET_KEY=your_secret_key_here
-ALGORITHM=HS256
-ACCESS_TOKEN_EXPIRE_MINUTES=60
-DATABASE_URL=sqlite:///./tasks.db
-```
-
-⚠️ **Never commit your `.env` file, API keys, passwords, or secret keys to GitHub.**
-
-Make sure your `.env` file is included in `.gitignore`.
-
----
-
-# 📡 API Overview
+# API Overview
 
 TaskPilot AI provides REST APIs for core application functionality.
 
-## 🔐 Authentication
+## Authentication
 
 ```text
 POST /register
@@ -449,7 +428,7 @@ Authentication endpoints handle user registration and login functionality.
 
 ---
 
-## 📋 Task Management
+## Task Management
 
 ```text
 GET    /tasks
@@ -462,7 +441,7 @@ These endpoints support the core task lifecycle, including creating, retrieving,
 
 ---
 
-## ❤️ Health Check
+## Health Check
 
 ```text
 GET /
@@ -473,58 +452,59 @@ Health endpoints can be used to verify that the backend API is running successfu
 
 ---
 
-# 📸 Screenshots
+# Screenshots
 
-## 🔐 Account Creation
+## Account Creation
 
 ![Account Creation](screenshots/01-Account_creation.png)
 
 ---
 
-## 🔑 Login
+## Login
 
 ![Login](screenshots/02-Login.png)
 
 ---
 
-## 🏠 Dashboard
+## Dashboard
 
 ![Dashboard](screenshots/03-DashboardTab.png)
 
 ---
 
-## ➕ Create Task
+## Create Task
 
 ![Create Task](screenshots/04-CreateTask.png)
 
 ---
 
-## 📋 My Tasks
+## My Tasks
 
 ![My Tasks](screenshots/05-MyTasksTab.png)
 
 ---
 
-## 🤖 AI Assistant
+## AI Assistant
 
 ![AI Assistant](screenshots/06-AiAssistantTab.png)
 
 ---
 
-## 📊 Analytics
+## Analytics
 
 ![Analytics](screenshots/07-AnalyticsTab.png)
 
 ---
 
-## ⚙️ Settings
+## Settings
 
 ![Settings](screenshots/08-SettingsTab.png)
 ```
-
+---
 ---
 
-# 🎯 Key Learning Outcomes
+
+### Key Learning Outcomes
 
 Building TaskPilot AI provided hands-on experience with several important full-stack development concepts.
 
@@ -569,13 +549,13 @@ Building TaskPilot AI provided hands-on experience with several important full-s
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 TaskPilot AI has been structured to allow future expansion.
 
 Potential improvements include:
 
-## 🗄️ Database & Infrastructure
+## Database & Infrastructure
 
 - PostgreSQL production database
 - Database migrations
@@ -583,7 +563,7 @@ Potential improvements include:
 - Cloud deployment
 - Environment-specific configurations
 
-## 🤖 AI Capabilities
+## AI Capabilities
 
 - Advanced LLM integration
 - AI-based task prioritization
@@ -591,7 +571,7 @@ Potential improvements include:
 - Intelligent productivity recommendations
 - Context-aware task assistance
 
-## ⚡ Performance & Scalability
+## Performance & Scalability
 
 - Redis caching
 - Background task processing
@@ -599,7 +579,7 @@ Potential improvements include:
 - Performance monitoring
 - API optimization
 
-## 👥 Collaboration
+## Collaboration
 
 - Team workspaces
 - Shared task management
@@ -607,48 +587,16 @@ Potential improvements include:
 - Real-time collaboration
 - Real-time task updates
 
-## 🔔 Notifications
+## Notifications
 
 - Email notifications
 - Task reminders
 - Due-date alerts
 - Notification preferences
 
----
 
-# 🧠 Why This Project Matters
 
-TaskPilot AI was built as a practical full-stack application rather than an isolated frontend or backend project.
 
-It brings together multiple aspects of modern software development:
-
-- A React-based user interface
-- A FastAPI backend
-- RESTful API communication
-- JWT authentication
-- Database modeling with SQLAlchemy
-- Persistent task management
-- Analytics-oriented application features
-- AI integration architecture
-- Modular system design
-
-The project demonstrates how these technologies can work together as part of a single application architecture.
-
----
-
-# 👩‍💻 Author
-
-**Nisha Lohar**
-
-Built as a full-stack project to explore modern web development, backend API architecture, authentication systems, database integration, and AI-powered application design.
-
----
-
-# ⭐ Support
-
-If you found this project interesting, consider giving the repository a ⭐.
-
-It helps support the project and makes it easier for others to discover it.
 
 ---
 
